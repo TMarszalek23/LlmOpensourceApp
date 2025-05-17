@@ -15,7 +15,7 @@ if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
 
 selected_model = "mistralai/mistral-7b-instruction:free"
-model = ChatOpenRouter(model_name=selected_model) 
+model = ChatOpenRouter(model_name=selected_model)
 
 def answer_question(question, documents, model):
     context = "\n\n".join([doc["text"] for doc in documents])
