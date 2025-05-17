@@ -1,6 +1,9 @@
-openai
 streamlit
+openai
 pymupdf
-typing
+langchain
 langchain-openai
+langchain-huggingface
 faiss-cpu
+transformers
+torch
