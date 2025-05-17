@@ -3,3 +3,4 @@ streamlit
 pymupdf
 typing
 langchain-openai
+embedder
