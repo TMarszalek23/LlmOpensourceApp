@@ -4,3 +4,4 @@ pymupdf
 typing
 langchain-openai
 embedder
+faiss
