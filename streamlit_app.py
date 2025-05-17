@@ -14,6 +14,15 @@ selected_model = "google/gemma-3-1b-it:free"
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
 
+selected_model = "mistralai/mistral-7b-instruction:free"
+model = ChatOpenRouter(model_name=selected_model) 
+
+def answer_question(question, documents, model):
+    context = "\n\n".join([doc["text]" for doc in documents])
+    prompt = ChatPromptTemplate.from_template(template)
+    chain = prommpt | model
+    return chain.invoke({"question": question, "context": context})
+
 # File upload for PDF
 uploaded_file = st.file_uploader("Upload a PDF file", type="pdf")
 
