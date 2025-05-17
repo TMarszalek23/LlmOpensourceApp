@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI
 import fitz  # PyMuPDF
 import os
-import chat_openrouter
+from chat_openrouter import ChatOpenRouter
 import embedder
 
 st.set_page_config(layout="wide", page_title="OpenRouter chatbot app")
