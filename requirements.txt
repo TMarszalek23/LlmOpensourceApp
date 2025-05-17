@@ -5,5 +5,3 @@ langchain
 langchain-openai
 langchain-huggingface
 faiss-cpu
-transformers
-torch
